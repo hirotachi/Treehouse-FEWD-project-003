@@ -16,6 +16,8 @@ body{
 
 fieldset {
     border: none;
+    padding: 0;
+    margin: 30px 0;
 }
 
 /* styles */
@@ -25,7 +27,6 @@ fieldset {
 }
 
 .main-header {
-    border-bottom: 4px solid black;
     margin-bottom: 1.5px;
 }
 .title{
@@ -50,6 +51,10 @@ fieldset {
     color: rgb(184, 184, 184);
 }
 
+.container{
+    border-top: 3px solid black;
+    padding: 2px 0;
+}
 .form {
     border-top: 2px solid black;
     text-align: left;
@@ -153,6 +158,41 @@ button:hover{
 
 .main-footer {
     color: rgb(128, 128, 128);
+}
+
+.section-intro{
+    color: rgb(128, 128, 128);
+}
+
+/* Media Queries----------------- */
+@media (min-width: 768px){
+    main {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        display: inline-block;
+        width: 60%;
+    }
+
+    label{
+        width: 20%;
+        display: inline-block;
+        margin-right: 19%;
+    }
+
+    #zip_code{
+        max-width: 150px;
+    }
+
+    textarea{
+        max-height: 100px;
+    }
+    
 }
 
 
