@@ -12,19 +12,19 @@
     <div class="wrap">
       <header class="main-header">
         <h1 class="title">The Code review</h1>
-        <div class="heade-description">
+        <div class="header-description">
           <h1 class="header-intro">Signup for our Newsletter</h1>
-          <p class="description">Get the latest news on houw your code is doing right in your inbox</p>
+          <p class="description">Get the latest news on how your code is doing right in your inbox</p>
         </div>
       </header>
       <main class="container">
         <form action="index.html" class="form">
           <fieldset>
-            <legend class="field-header">Contact Information</legend>
+            <div class="field-header">Contact Information</div>
             <label for="full_name">Full Name</label>
-            <input type="text" name="user_name" id="full_name" required><br>
+            <input type="text" name="user_name" id="full_name" placeholder="required" required><br>
             <label for="email_address">Email Address</label>
-            <input type="email" name="email" id="email_address" required><br>
+            <input type="email" name="email" id="email_address" placeholder="required" required><br>
             <label for="phone_number">Phone Number</label>
             <input type="tel" name="phone_number" id="phone_number"><br>
             <label for="street">Street Address</label>
@@ -41,19 +41,23 @@
             <label for="zip_code">Zip Code</label>
             <input type="text" name="zip_code" id="zip_code" required><br>
           </fieldset>
-          <fieldset>
-            <legend class="field-header">Newsletter</legend>
-            <label>Select the Newsletter you would like to receive</label><br>
+          <fieldset class="bottom-sub">
+            <div class="field-header ">Newsletter</div>
+            <div class="checkbox-intro">Select the Newsletter you would like to receive</div>
+
             <input type="checkbox" name="news_type" id="html_type"><label class="light" for="html_type">HTML News</label><br>
             <input type="checkbox" name="news_type" id="css_type"><label class="light" for="css_type">CSS News</label><br>
             <input type="checkbox" name="news_type" id="javascript_type"><label class="light" for="javascript_type">JavaScript News</label><br>
-            <label>Newsletter Format</label><br>
-            <input type="checkbox" name="news_format" id="html_format"><label class="light" for="html_format">HTML</label><br>
-            <input type="checkbox" name="news_format" id="plaint_text"><label class="light" for="plaint_text">Plain text</label><br>
+
+            <div class="format-intro">Newsletter Format</div>
+
+            <input type="radio" name="news_format" id="html_format"><label class="light" for="html_format">HTML</label><br>
+            <input type="radio" name="news_format" id="plaint_text"><label class="light" for="plaint_text">Plain text</label><br>
+
           </fieldset>
           <label for="other_topics">Other topics you'd like to hear about</label><br>
           <textarea name="other_topics" id="other_topics" cols="30" rows="10"></textarea>
-          <button type="submit">SignUp</button>
+          <button type="submit">Sign Up</button>
         </form>
       </main>
       <footer class="main-footer">
