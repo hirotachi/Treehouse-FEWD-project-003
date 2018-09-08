@@ -179,7 +179,7 @@ button:hover{
         width: 60%;
     }
 
-    label{
+    label:not(.section-intro){
         width: 20%;
         display: inline-block;
         margin-right: 19%;

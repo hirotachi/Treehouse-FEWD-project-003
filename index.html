@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Newsletter Sign Up</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Online Registration Form</title>
@@ -27,7 +26,7 @@
             <input type="email" name="email" id="email_address" placeholder="required" required><br>
             <label for="phone_number">Phone Number</label>
             <input type="tel" name="phone_number" id="phone_number"><br>
-            <label for="street">Street Address</label>
+            <label for="street_address">Street Address</label>
             <input type="text" name="street_address" id="street_address"><br>
             <label for="city">City</label>
             <input type="text" name="city" id="city"><br>
@@ -102,7 +101,7 @@
             <input type="radio" name="news_format" id="plaint_text"><label class="light" for="plaint_text">Plain text</label><br>
 
           </fieldset>
-          <div class="section-intro" for="other_topics">Other topics you'd like to hear about</div><br>
+          <label class="section-intro" for="other_topics">Other topics you'd like to hear about</label><br>
           <textarea name="other_topics" id="other_topics" cols="30" rows="10"></textarea>
           <button type="submit">Sign Up</button>
         </form>
